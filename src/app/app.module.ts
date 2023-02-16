@@ -13,13 +13,17 @@ import { AdService } from './ad.service';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent
+    ProductsComponent,
+    AdJobComponent,
+    AdprofileComponent,
+    AdbannerComponent,
+    AdDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ AdService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
