@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { AdJobComponent } from './ad-job.component';
 import { AdprofileComponent } from './ad-profile.component';
-import { AdbannerComponent } from './ad-banner.compoment';
+import { AdbannerComponent } from './ad-banner.component';
 import { AdDirective } from './ad.directive';
 import { AdService } from './ad.service';
 
