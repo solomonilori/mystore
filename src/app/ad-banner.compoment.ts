@@ -1,8 +1,8 @@
 import { Component, Input, OnDestroy, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 
 import { AdDirective } from './ad.directive';
-import { AdItem } from './ad.item';
-impport { AdComponent } from './ad.component';
+import { AdItem } from './ad-item';
+import { AdComponent } from './ad.component';
 
 @Component({
   selector: 'app-ad-banner',

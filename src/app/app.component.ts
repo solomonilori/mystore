@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   ads: AdItem[] = [];
   constructor(private adService: AdService) {}
   
-  ngOnInit(): void {
+  ngOnInit() {
     this.getProducts();
     this.ads = this.adService.getAds();
   }
