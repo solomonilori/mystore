@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AdItem } from './ad-item';
+import { AdService } from './ad.service';
 import { Product } from './models/product';
 
 @Component({
@@ -10,9 +12,12 @@ export class AppComponent implements OnInit {
   title = 'Olumide Store';
   buttonText ='Click Me';
   theProducts: Product[] = [];
+  ads: AdItem[] = [];
+  constructor(private adService: AdService) {}
   
-  ngOnInit(): void {
+  ngOnInit() {
     this.getProducts();
+    this.ads = this.adService.getAds();
   }
 
   greetings(theName:string){
